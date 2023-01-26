@@ -1,0 +1,211 @@
+.geners-section{
+  padding: 1.2em;
+  background-color: rgba(6, 51, 60, 0.8);
+  color: white;
+}
+
+.geners-section h2{
+  margin-top: 0;
+}
+
+.navbar{
+  border: 1px solid #acaaaa;
+  padding: 1em;
+}
+.navbar-list{
+  list-style-type: none;
+  display: flex;
+  gap: 1em;
+  padding: 0.4em;
+  padding-left: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: all 0.5sec ease-in-out;
+}
+
+.navbar-list:focus{
+  border: 1px solid;
+}
+
+.navbar-item{
+  color: #b6b5b5;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+
+
+
+.navbar-item:hover, .navbar-item:active {
+  color: rgb(72, 235, 205);
+}
+
+
+.navbar-item:focus{
+  color: rgb(72, 235, 205);
+  border-bottom: 1px solid;
+}
+
+.saved-item{
+  border: 1px solid;
+  padding: 0.4rem;
+}
+
+.search-section{
+  padding: 1.5em;
+  background-color: rgb(3,37,65);
+  color: white;
+
+}
+
+.title{
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+.label{
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.form{
+  display: grid;
+  gap:0.5em;
+
+}
+
+.search-input, .btn{
+    
+    padding: 0.6em 2em;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 5px rgb(98, 95, 95);
+    border-radius: 20px;
+}
+
+.btn{
+    color: black;
+    background-color: rgb(204, 199, 199);
+    cursor: pointer;
+    
+}
+
+.btn:active {
+    background-color: black;
+}
+
+/* cards section */
+
+.card-list{
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  justify-content: center;
+  align-items: center;
+  
+}
+.card{
+  background-color: white;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 6px rgb(155, 149, 149);
+}
+
+.card img{
+  width: 100%;
+  height: 380px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 10px;
+}
+
+.card-desc{
+  padding:0 1em;
+}
+.card-desc h3{
+  text-align: center;
+}
+.card-desc small{
+  text-align: center;
+  font-size: 14px
+}
+
+.reset-btn , .save-btn{
+  padding: 0.5rem 1.5rem;
+  margin: 0.5em;
+  border: none;
+  cursor: pointer;
+}
+
+.save-btn{
+  background: blue;
+  color: white;
+}
+
+
+@media (min-width:580px){
+  .main{
+    display: flex;
+  }
+
+  .geners-section{
+    width: 30%;
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    height: 100vh;
+  } 
+
+  
+
+  .container{
+      width: 70%;
+      margin-left: auto;
+  }
+
+  .navbar{
+    height: 80vh;
+  }
+
+  .navbar-list{
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 1.7em;
+    height: 100%;
+    
+  }
+
+  
+
+  .form{
+    grid-template-columns: auto 1fr auto;
+    
+  }
+  .label{
+    grid-column: 1/-1;
+  }
+  .form input{
+    grid-column: 1/3;
+  }
+
+  .card-list{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .card{
+    height: 600px;
+    overflow: scroll;
+  }
+  .card img{
+    height: 300px;
+  }
+   
+}
